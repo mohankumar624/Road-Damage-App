@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Damage Map - Road Damage Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Road Damage Reporting System</div>
+        <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="report.html">Report Damage</a></li>
+            <li><a href="map.html" class="active">Map</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="hero-section">
+    <div class="login-container" style="width: 80%; max-width: 900px;">
+        
+        <div class="map-legend">
+            <span>🔴 Severe damage</span>
+            <span>🟢 Fixed road</span>
+        </div>
+
+        <div id="map" style="height: 450px; border-radius: 12px; margin: 20px 0; border: 1px solid #cbd5e1; box-shadow: var(--glass-shadow);"></div>
+
+        <div class="map-purpose">
+            <h3>Purpose & Features:</h3>
+            <ul>
+                <li>✔ Live interactive map integration</li>
+                <li>✔ Marker for road damage status</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- Application Script -->
+<script src="script.js"></script>
+</body>
+</html>

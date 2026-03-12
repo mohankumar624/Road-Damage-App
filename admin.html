@@ -1,0 +1,38 @@
+<head>
+    <title>Admin Dashboard - Road Damage Reporting</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Road Damage Reporting System</div>
+        <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="report.html">Report Damage</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="admin.html" class="active">Admin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="hero-section">
+    <div class="login-container" style="width: 80%; max-width: 900px; text-align: center;">
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin! Your live location is being tracked below.</p>
+        
+        <div id="admin-map" style="height: 450px; border-radius: 12px; margin: 20px 0; border: 1px solid #cbd5e1; box-shadow: var(--glass-shadow);"></div>
+
+        <button class="signin" style="margin-top: 10px;" onclick="window.location.href='./'">Logout</button>
+    </div>
+</main>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- Application Script -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Road Damage Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Road Damage Reporting System</div>
+        <ul class="nav-links">
+            <li><a href="./" class="active">Home</a></li>
+            <li><a href="report.html">Report Damage</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="status.html">Status</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="hero-section">
+    <div class="hero-content">
+        <h1>Road Damage Reporting System</h1>
+        <p class="tagline">Report potholes easily and improve road safety</p>
+        <button class="cta-button" onclick="window.location.href='report.html'">Report Damage</button>
+    </div>
+
+    <div class="login-container">
+        <h2>User Login</h2>
+        <form action="login.html">
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username">
+            
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
+            
+            <button type="submit">Login</button>
+        </form>
+        
+        <p>Don't have an account?</p>
+        <div class="action-buttons">
+            <button class="signup" type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+            <button class="signin" type="button" onclick="window.location.href='login.html'">Sign In</button>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
